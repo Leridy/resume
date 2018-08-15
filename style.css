@@ -23,20 +23,26 @@ a{
     border-bottom:1px solid #ccc;
 }
 
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+
 .container{
     position: relative;
     margin:0 auto;
     width: 1000px;
     font-size:0;
     background-color: #f4f1ea;
+    height: 1410px;
 }
 
 .slider{
     position: relative;
-    display: inline-block;
-    height: 1410px;
+    /*display: inline-block;*/
+    display: none;
     padding-top:10px;
-    width: 300px;
+    width: 200px;
     font-size:14px;
     color: #efefef;
     background-color: #555;
@@ -51,7 +57,7 @@ a{
 .photo{
     width: 135px;
     height: 165px;
-    margin: 15px auto;
+    /*margin: 15px auto;*/
     border-radius: 5px;
     border:8px solid #cfcfcf;
 }
@@ -79,15 +85,16 @@ a{
 
 .dl dt{
     display: inline-block;
+    margin-top: 10px;
     margin-bottom:8px;
-    width: 100px;
+    width: 80px;
     text-align: right;
 }
 
 .dl dd{
     display: inline-block;
     margin-left:8px;
-    width: 130px;
+    width: 80px;
     text-align: left;
     -webkit-margin-start: -10px
 }
@@ -220,18 +227,19 @@ dd p{
     position: absolute;
     left: 0;
     display: inline-block;
-    margin-left:310px;
+    /*margin-left:220px;*/
+    margin-left: 20px;
     padding-top:20px;
-    width:680px;
-    font-size:18px;
+    width:1000px;
+    font-size:16px;
 }
 
 .section{
-    width: 630px;
+    width: 950px;
 }
 
 .section .header{
-    width:680px;
+    width:960px;
     padding-left:20px;
     color: #fff;
     background-color: #555;
@@ -239,19 +247,19 @@ dd p{
 }
 
 .section .content{
-    width: 680px;
-    font-size:14px;
+    width: 980px;
+    font-size:15px;
 }
 
 .section .content li{
-    width: 640px;
+    width: 930px;
 }
 
 .content .pro-info .pro-name,
 .content .pro-info .pro-time{
     display: inline-block;
     height: 20px;
-    width: 290px;
+    width: 400px;
     line-height:20px;
 }
 
@@ -259,8 +267,16 @@ dd p{
     width: 580px;
 }
 
+.pro-dl{
+    margin: 0;
+}
+
+.pro-dl dt{
+    margin-top: 10px;
+}
+
 .project .content{
-    padding: 15px;
+    padding: 10px;
 }
 
 .design{
@@ -284,6 +300,15 @@ dd p{
     width: 200px;
 }
 
+.info-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.info-blocks div{
+    width: 25%;
+}
 footer{
     position: fixed;
     bottom: 0;
@@ -295,4 +320,10 @@ footer{
 footer a{
     margin-left:5px;
     margin-right: 5px;
+}
+
+.intro-wrapper{
+    width: 980px;
+    padding: 15px;
+    display: flex;
 }
